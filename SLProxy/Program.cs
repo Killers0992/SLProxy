@@ -30,10 +30,6 @@ var serverList = new ServerConsole(7777);
 
 List<Task> Tasks = new List<Task>();
 
-var watcher = new FileSystemWatcher("./");
-watcher.EnableRaisingEvents = true;
-watcher.star
-
 for (int x = 0; x < ProxyConfig.Instance.Redirects.Count; x++)
 {
 	var proxy = new UdpProxy();
